@@ -10,20 +10,27 @@
 </head>
 <body>
     <!-- Section Navbar Start -->
-    <section id="navbar" class="hidden lg:block relative">
-            <div class="flex justify-between py-4 px-10 text-slate-700 bg-white/30 backdrop-blur-md fixed top-0 left-0 right-0 shadow">
-                <div class="text-lg">
-                    <h3>Vacation.co</h3>    
+    <section id="navbar" class="lg:block relative">
+            <div class="flex justify-between py-4 px-4 md:px-10 text-slate-700 bg-white/30 backdrop-blur-md fixed top-0 left-0 right-0 shadow w-full">
+                <div class="flex items-center">
+                    <div class="text-lg">
+                        <h3>Vacation.co</h3>    
+                    </div>
+                    <button id="hamburger" name="hamburger" class="block lg:hidden right-4 absolute" type="button">
+                        <span class="block w-[30px] h-[2px] my-2 bg-slate-600 transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="block w-[30px] h-[2px] my-2 bg-slate-600 transition duration-300 ease-in-out"></span>
+                        <span class="block w-[30px] h-[2px] my-2 bg-slate-600 transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
                 </div>
-                <div>
-                    <ul class="flex text-base">
-                        <li class="mr-10 hover:text-slate-500 transition duration-200"><a href="#header">Home</a></li>
-                        <li class="mr-10 hover:text-slate-500 transition duration-200"><a href="#destination">Discover</a></li>
-                        <li class="mr-10 hover:text-slate-500 transition duration-200"><a href="#services">Features</a></li>
-                        <li class="mr-10 hover:text-slate-500 transition duration-200"><a href="#blog">Blog</a></li>
-                        <li class="mr-10 hover:text-slate-500 transition duration-200"><a href="#book"">Book</a></li>
-                        <li class="mr-10"><a href="" class="text-slate-400 hover:text-slate-700">Log in</a></li>
-                        <li class="mr-10"><a href="" class="text-slate-400 border border-slate-400 px-6 py-2 hover:bg-violet-600 hover:text-slate-100 rounded transition">Sign Up</a></li>
+                <div id="nav-menu" class="hidden absolute lg:static lg:block lg:max-w-full min-w-[200px] top-full rounded-lg lg:rounded-none bg-white/80 py-5 lg:py-0 right-4 lg:bg-transparent">
+                    <ul class="block lg:flex text-base">
+                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#header" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Home</a></li>
+                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#destination" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline" >Discover</a></li>
+                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#services" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline" >Features</a></li>
+                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#blog" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline"> Blog</a></li>
+                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#book" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Book</a></li>
+                        <li class="lg:mr-10"><a href="" class="hover:text-slate-500 py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Log in</a></li>
+                        <li class="lg:mr-10"><a href="" class="lg:border lg:border-slate-400 lg:px-6 py-2 mx-8 lg:mx-0 lg:hover:bg-violet-600 hover:text-slate-500 lgrounded lg:transition flex lg:inline">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,7 +38,7 @@
     <!-- Section Navbar End -->
 
     <!-- Section Header Start -->
-    <section id="header" class="pt-32">
+    <section id="header" class="pt-0">
         <div class="container">
             <div class="lg:flex">
                 <div class="w-full lg:w-1/2 lg:px-0 lg:order-last rounded overflow-hidden">
@@ -276,5 +283,6 @@
     </footer>
     <!-- Footer Start -->
 
+<script src="dist/js/script.js"></script>
 </body>
 </html>
