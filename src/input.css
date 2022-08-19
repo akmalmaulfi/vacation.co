@@ -4,6 +4,7 @@
 
 body {
   height: 3000px;
+  font-family: Inter;
 }
 
 .hamburger-active > span:nth-child(1) {

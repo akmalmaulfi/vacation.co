@@ -3,13 +3,16 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     container: {
-      center: true
+      center: true,
     },
     extend: {
       colors: {
-        "secondary": "#78716C",
+        secondary: "#78716C",
+      },
+      fontFamily: {
+        inter: ["Inter"],
       },
     },
   },
   plugins: [],
-}
+};
