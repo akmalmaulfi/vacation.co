@@ -7,6 +7,15 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
+// Form Login tampil
+const btnLogin = document.querySelector("ul li:nth-child(6)");
+const login = document.getElementById("login");
+
+btnLogin.addEventListener("click", function (e) {
+  login.classList.toggle("hidden");
+  e.preventDefault();
+});
+
 // Klik diluar Hamburger
 window.addEventListener("click", function (e) {
   if (e.target != hamburger && e.target != navMenu) {
