@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation.co</title>
     <link rel="stylesheet" href="dist/output.css">
+    <!-- Goole Fonts -->
     <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap"
     rel="stylesheet"
+
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <!-- Section Navbar Start -->
     <section id="navbar" class="lg:block relative z-10">
             <div class="flex justify-between py-4 px-4 md:px-10 text-slate-700 bg-white/30 lg:bg-transparent backdrop-blur-md fixed top-0 left-0 right-0 shadow w-full">
                 <div class="flex items-center">
-                    <div class="text-lg">
+                    <div class="text-lg font-poppins font-bold">
                         <h3>Vacation.co</h3>    
                     </div>
                     <button id="hamburger" name="hamburger" class="block lg:hidden right-4 absolute " type="button">
@@ -28,36 +34,18 @@
                 </div>
                 <div id="nav-menu" class="hidden absolute lg:static lg:block lg:max-w-full min-w-[200px] top-full rounded-lg lg:rounded-none py-5 lg:py-0 right-4 lg:bg-transparent shadow-lg lg:shadow-none bg-white/80 ">
                     <ul class="block lg:flex text-base">
-                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#header" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Home</a></li>
-                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#destination" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline" >Discover</a></li>
-                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#services" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline" >Features</a></li>
-                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#blog" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline"> Blog</a></li>
-                        <li class="lg:mr-10 hover:text-slate-500 transition duration-200"><a href="#book" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Book</a></li>
-                        <li class="lg:mr-10 "><a href="" class="hover:text-slate-500 py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Log in</a></li>
-                        <li class="lg:mr-10"><a href="" class="lg:border lg:border-violet-600 lg:px-6 py-2 mx-8 lg:mx-0 lg:hover:bg-violet-600 lg:hover:text-slate-100 lg:rounded-md lg:transition flex lg:inline lg:text-violet-600 hover:text-slate-500">Sign Up</a></li>
+                        <li class="lg:mr-10 hover:text-violet-500 transition duration-200"><a href="#header" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Home</a></li>
+                        <li class="lg:mr-10 hover:text-violet-500 transition duration-200"><a href="#destination" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline" >Discover</a></li>
+                        <li class="lg:mr-10 hover:text-violet-500 transition duration-200"><a href="#services" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline" >Features</a></li>
+                        <li class="lg:mr-10 hover:text-violet-500 transition duration-200"><a href="#blog" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline"> Blog</a></li>
+                        <li class="lg:mr-10 hover:text-violet-500 transition duration-200"><a href="#book" class="py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Book</a></li>
+                        <li class="lg:mr-10 "><a href="" class="hover:text-violet-500 py-2 mx-8 lg:py-0 lg:mx-0 flex lg:inline">Log in</a></li>
+                        <li class="lg:mr-10"><a href="" class="lg:border lg:border-violet-600 lg:px-6 py-2 mx-8 lg:mx-0 lg:hover:bg-violet-600 lg:hover:text-slate-100 lg:rounded-md lg:transition flex lg:inline lg:text-violet-600 hover:text-violet-500">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
     </section>
     <!-- Section Navbar End -->
-
-     <!-- Section Login Start -->
-     <section id="login" class="hidden">
-        <div class="container">
-            <div class="w-[280px] bg-white/60 backdrop-blur absolute top-[20%] left-1/2 -translate-x-1/2 rounded-md px-8 py-10 shadow-lg">
-                <div class="w-full text-sm text-slate-700">
-                    <label for="name"> Name   
-                        <input type="text" id="name" class="w-full rounded mb-2">
-                    </label>
-                    <label for="password"> Password
-                        <input type="password" name="password" id="password" class="w-full rounded">
-                    </label>
-                    <button type="submit" class="border mt-7 w-full rounded bg-violet-600 py-1 text-slate-100 uppercase text-sm">Login</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Section Login End -->
 
     <!-- Section Header Start -->
     <section id="header" class="pt-0 lg:pt-32">
@@ -68,8 +56,8 @@
                 </div>
                 <div class="w-full px-4 md:px-0 mt-4 lg:w-1/2 lg:px-0">
                     <div>
-                        <h2 class="text-2xl text-slate-800 lg:text-6xl font-semibold text-center lg:text-left">It's A Big World <span class="lg:block"> Out There. Let's </span> Explore It!</h2>
-                        <p class="mt-3 mb-6 text-secondary lg:mt-5 lg:mb-9 text-center lg:text-left">Love travel?Discover. plan and book your perfect trip with expert advice, travel guides, destinations.</p>
+                        <h2 class="text-2xl text-slate-800 lg:text-6xl font-semibold text-center lg:text-left font-poppins">It's A Big World <span class="lg:block"> Out There. Let's </span> Explore It!</h2>
+                        <p class="mt-3 mb-6 text-secondary lg:mt-5 lg:mb-9 text-center lg:text-left font-poppins">Love travel? Discover. plan and book your perfect trip with expert advice, travel guides, destinations.</p>
                         <a href="" class="text-sm border border-violet-600 px-4 py-2 text-violet-600 hover:bg-violet-700 hover:text-white lg:text-base lg:px-6 lg:py-4 rounded block text-center lg:inline"><i class="fa fa-play-circle" aria-hidden="true"></i>
                             Let's Watch A Video</a>
                     </div>
@@ -95,7 +83,7 @@
     <!-- Section Header End -->
 
     <!-- Section Destination Start -->
-    <section id="destination" class="pt-32 pb-28">
+    <section id="destination" class="pt-32 pb-28 font-poppins">
         <div class="container">
             <div class="w-full">
                 <p class=" text-center uppercase text-secondary mb-2 text-md">Get to know the world</p>
@@ -155,10 +143,10 @@
                 </div>
             </div>
             <div class="w-full flex flex-wrap justify-between px-4 mt-20 lg:mt-40" id="clients">
-                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group">
+                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group cursor-pointer">
                     <img src="dist/img/garuda.svg" alt="" class="w-[100px] h-[100px] lg:w-[200px] grayscale group-hover:grayscale-0  transition duration-300">
                 </div>
-                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group">
+                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2877.78 782.81" version="1.1" class="w-[100px] h-[100px] lg:w-[200px] grayscale group-hover:grayscale-0  transition duration-300">
                         <g id="surface1">
                         <path style=" stroke:none;fill-rule:nonzero;fill:rgb(75.299072%,28.199768%,42.399597%);fill-opacity:1;" d="M 782.816406 479.003906 C 738.082031 514.421875 661.664063 579.65625 628.117188 588.972656 C 598.292969 585.246094 572.203125 544.238281 561.019531 514.421875 C 464.101563 581.515625 221.796875 633.703125 147.242188 574.058594 C 121.152344 553.5625 104.378906 536.785156 104.378906 512.554688 C 104.378906 497.640625 108.105469 484.59375 113.695313 469.6875 C 119.285156 454.777344 130.46875 438 143.519531 421.226563 L 186.382813 367.175781 C 70.828125 355.988281 136.0625 301.941406 247.890625 301.941406 C 287.03125 262.800781 326.171875 223.65625 352.265625 206.882813 C 378.359375 190.109375 400.726563 182.65625 421.230469 182.65625 C 423.09375 182.65625 424.960938 182.65625 426.820313 184.515625 C 428.683594 186.382813 428.683594 188.246094 428.683594 190.109375 C 428.683594 191.972656 428.683594 193.835938 426.820313 197.5625 C 424.960938 201.289063 423.09375 203.15625 419.367188 206.882813 L 350.40625 283.304688 C 415.636719 273.984375 471.550781 259.070313 512.558594 240.433594 C 553.5625 221.796875 570.339844 201.289063 570.339844 182.65625 C 570.339844 171.46875 562.882813 162.152344 547.972656 156.558594 C 533.058594 149.101563 514.421875 147.242188 490.1875 147.242188 C 456.644531 147.242188 417.503906 150.972656 374.632813 160.289063 C 331.761719 167.742188 287.03125 180.789063 236.710938 197.5625 C 253.484375 203.15625 255.347656 212.476563 240.4375 225.523438 L 139.789063 251.617188 C 128.605469 253.480469 65.234375 285.164063 78.28125 238.570313 C 89.464844 197.5625 136.058594 141.648438 160.289063 126.738281 C 171.472656 119.28125 186.382813 111.828125 206.886719 106.238281 C 307.535156 76.414063 501.375 27.957031 607.613281 89.464844 C 670.984375 143.515625 618.796875 238.570313 549.835938 262.800781 C 488.328125 283.304688 413.773438 309.398438 309.398438 320.578125 L 287.03125 341.078125 C 344.808594 352.261719 622.527344 365.308594 512.558594 493.917969 C 506.964844 499.507813 501.375 506.964844 495.785156 512.554688 C 516.285156 503.234375 538.648438 490.183594 559.152344 467.824219 C 562.882813 460.367188 566.609375 452.910156 572.203125 445.453125 C 587.113281 424.953125 605.75 404.453125 631.84375 387.675781 C 689.625 346.671875 760.449219 313.125 833.140625 303.804688 C 842.460938 301.941406 866.6875 305.671875 876.007813 314.988281 C 883.464844 324.308594 887.191406 328.035156 890.921875 335.492188 C 892.78125 337.355469 890.921875 342.945313 889.054688 344.808594 C 883.464844 348.539063 870.417969 355.992188 862.960938 359.71875 C 894.644531 376.496094 896.511719 395.132813 848.050781 449.1875 C 769.769531 555.421875 862.960938 540.515625 941.242188 462.234375 L 941.242188 460.367188 C 961.746094 439.863281 980.382813 421.226563 995.292969 404.457031 C 1010.210938 387.679688 1015.800781 380.226563 1028.839844 363.449219 C 1006.480469 359.71875 969.203125 370.90625 959.878906 363.449219 C 956.15625 357.855469 971.0625 335.492188 984.113281 320.578125 C 1017.660156 275.847656 1041.890625 273.984375 1094.078125 272.121094 C 1095.941406 268.390625 1103.398438 262.800781 1105.261719 257.210938 C 1133.21875 193.839844 1254.371094 175.199219 1168.628906 270.257813 C 1181.679688 270.257813 1205.910156 277.710938 1213.359375 273.984375 C 1215.230469 272.121094 1207.769531 301.941406 1202.179688 309.398438 C 1191 329.898438 1170.488281 355.992188 1157.449219 361.589844 C 1151.859375 365.3125 1127.628906 367.179688 1118.308594 367.179688 C 1110.851563 367.179688 1105.261719 365.3125 1101.53125 365.3125 C 1097.808594 365.3125 1094.078125 367.179688 1090.351563 367.179688 C 1067.980469 393.269531 1051.210938 419.363281 1038.160156 447.320313 C 1025.109375 475.28125 1017.660156 501.378906 1017.660156 521.882813 C 1017.660156 529.328125 1019.519531 534.929688 1023.25 538.652344 C 1026.980469 542.378906 1032.570313 544.242188 1040.03125 544.242188 C 1051.210938 544.242188 1067.980469 536.785156 1092.210938 521.882813 C 1112.71875 508.835938 1140.679688 488.328125 1174.21875 460.367188 C 1177.949219 452.914063 1181.679688 443.597656 1185.410156 434.277344 C 1220.820313 337.355469 1394.160156 272.121094 1314.011719 395.136719 C 1297.238281 421.230469 1269.28125 443.597656 1235.730469 469.691406 C 1233.871094 475.28125 1233.871094 479.007813 1232 484.597656 C 1232 488.328125 1232 492.054688 1230.140625 495.785156 C 1220.820313 521.882813 1239.460938 536.785156 1269.28125 531.195313 C 1282.328125 529.328125 1300.96875 523.738281 1323.328125 508.835938 C 1341.96875 497.644531 1360.609375 484.597656 1381.109375 465.960938 C 1386.699219 445.457031 1396.019531 423.097656 1407.199219 400.726563 C 1427.710938 361.589844 1463.121094 318.71875 1513.449219 262.804688 C 1560.039063 210.613281 1697.960938 89.46875 1733.378906 91.328125 C 1738.96875 91.328125 1742.691406 93.195313 1746.429688 96.921875 C 1750.148438 100.648438 1752.019531 104.375 1752.019531 109.964844 C 1752.019531 126.742188 1712.878906 171.472656 1658.820313 236.707031 C 1604.769531 301.941406 1517.171875 376.496094 1427.710938 467.824219 L 1427.710938 493.921875 C 1476.160156 445.457031 1668.148438 290.761719 1692.371094 311.265625 C 1800.46875 406.316406 1604.769531 480.871094 1578.679688 501.378906 L 1571.230469 506.96875 C 1612.230469 587.109375 1690.511719 512.558594 1761.328125 452.910156 L 1768.789063 482.738281 C 1722.191406 529.328125 1684.921875 561.015625 1655.101563 579.660156 C 1614.089844 605.753906 1574.949219 622.523438 1537.679688 587.105469 C 1522.761719 572.203125 1496.671875 546.109375 1479.898438 510.691406 C 1455.671875 521.878906 1455.671875 529.328125 1446.351563 546.109375 C 1416.519531 605.753906 1377.378906 598.296875 1377.378906 506.96875 C 1351.289063 534.925781 1328.921875 555.425781 1308.421875 570.335938 C 1282.328125 588.972656 1256.230469 598.296875 1235.730469 598.296875 C 1213.371094 598.296875 1194.730469 588.972656 1181.679688 572.203125 C 1168.640625 555.425781 1163.039063 531.195313 1163.039063 501.375 C 1129.488281 533.0625 1097.808594 557.289063 1069.851563 575.929688 C 1034.441406 598.296875 1004.621094 611.34375 982.25 611.34375 C 965.476563 611.34375 954.292969 607.609375 944.972656 598.296875 C 935.65625 590.839844 931.925781 577.792969 931.925781 562.878906 C 931.925781 549.832031 933.792969 536.785156 939.382813 521.878906 C 944.972656 506.96875 952.429688 490.1875 961.746094 473.414063 C 930.0625 533.058594 665.394531 736.214844 782.816406 479.003906 Z M 266.53125 370.902344 L 231.117188 410.046875 C 221.796875 421.226563 214.34375 430.550781 208.75 441.730469 C 203.160156 451.042969 199.429688 460.367188 199.429688 465.957031 C 199.429688 477.140625 206.886719 486.460938 223.664063 493.917969 C 240.4375 503.234375 259.074219 506.964844 281.441406 506.964844 C 320.582031 506.964844 357.855469 497.644531 395.136719 479.007813 C 432.410156 460.367188 451.054688 443.597656 451.054688 426.816406 C 451.054688 415.636719 434.277344 404.453125 402.59375 395.132813 C 370.902344 383.949219 326.171875 376.492188 266.53125 370.902344 Z M 1530.21875 465.957031 L 1560.03125 482.734375 C 1595.449219 456.640625 1632.730469 434.273438 1647.640625 421.226563 C 1705.421875 369.035156 1634.589844 387.675781 1610.359375 404.453125 C 1587.988281 421.226563 1558.179688 439.863281 1530.21875 465.957031 Z M 1327.058594 285.164063 C 1327.058594 268.390625 1334.511719 253.480469 1349.421875 238.570313 C 1364.328125 223.65625 1379.25 216.203125 1394.148438 216.203125 C 1401.609375 216.203125 1409.058594 218.066406 1412.789063 221.796875 C 1416.519531 225.523438 1418.378906 232.976563 1418.378906 240.433594 C 1418.378906 255.34375 1410.929688 270.257813 1396.019531 285.164063 C 1381.109375 301.941406 1368.058594 309.394531 1353.148438 309.394531 C 1345.699219 309.394531 1338.238281 307.53125 1332.648438 301.941406 C 1328.921875 298.210938 1327.058594 292.621094 1327.058594 285.164063 Z M 825.683594 376.492188 C 594.566406 437.996094 594.566406 534.925781 633.707031 534.925781 C 646.753906 534.925781 670.984375 520.011719 710.125 488.324219 C 749.265625 454.773438 786.542969 424.949219 825.683594 376.492188 "/>
@@ -172,10 +160,10 @@
                         </g>
                     </svg>
                 </div>
-                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group">
+                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group cursor-pointer">
                     <img src="dist/img/lion.svg" alt="" class="grayscale group-hover:grayscale-0  transition duration-300 w-[100px] h-[100px] lg:w-[200px]">
                 </div>
-                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group">
+                <div class="w-1/2 lg:w-1/4 flex justify-center lg:block group cursor-pointer">
                     <img src="dist/img/sriwijaya.svg" alt="" class="grayscale group-hover:grayscale-0  transition duration-300 w-[100px] h-[100px] lg:w-[200px]" >
                 </div>
             </div>
@@ -186,7 +174,7 @@
     <!-- Section Services Start -->
     <section id="services" class="pt-32 pb-32 bg-[#F7F8FC]">
         <div class="container">
-            <div class="w-full text-center px-5">
+            <div class="w-full text-center px-5 font-poppins">
                 <h3 class="text-slate-800 text-xl font-semibold">How To Get Started <span class="text-secondary">With Us</span></h3>
                 <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 <div class="lg:flex lg:justify-center mt-4">
@@ -212,7 +200,7 @@
     <!-- Section Services End -->
 
     <!-- Section Blog Start -->
-    <section id="blog" class="pt-32">
+    <section id="blog" class="pt-32 font-poppins">
         <div class="container px-4">
             <div class="w-full">
                 <h3 class="text-xl font-semibold text-center text-slate-800">Get Update With <span class="text-violet-600">Latest Blog</span></h3>
@@ -261,11 +249,11 @@
     <!-- Section Blog End -->
 
     <!-- Section Book Start -->
-    <section id="book" class="pt-32 pb-28">
+    <section id="book" class="pt-32 pb-28 font-poppins">
         <div class="container lg:flex lg:justify-center lg:items-center">
             <div class="w-full px-4 lg:px-7">
                 <p class="text-sm text-violet-600">Easy and feel</p>
-                <h3 class="text-2xl lg:text-4xl text-slate-800 font-medium mt-2 ">Book Your Next Trip <span class="lg:block">In 3 Easy Steps</span></h3>
+                <h3 class="text-2xl lg:text-4xl text-slate-800 font-medium mt-2">Book Your Next Trip <span class="lg:block">In 3 Easy Steps</span></h3>
                 <p class="text-secondary text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, harum at. Accusantium obcaecati id exercitationem magni itaque nemo, cumque cupiditate.</p>
                 <a href="" class="w-40 block mt-5 px-2 py-3 bg-violet-500 text-center text-white font-medium rounded">Book Now</a>
             </div>
